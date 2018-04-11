@@ -1,0 +1,16 @@
+.bg-rooftop {
+	@include backImage('/images/background/rooftop_blue_background.png');
+	@media screen and (max-width: $break-sm) {
+		background-image: none;
+	}
+}
+
+.bg-laptop {
+	@include backImage(
+	'/images/background/encompass-ng-background.png',
+	100vw,
+	bottom left);
+	@media screen and (max-width: $break-lg) {
+		background-image: none;
+	}
+}

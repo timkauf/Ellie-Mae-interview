@@ -1,0 +1,28 @@
+$color-btn-text: $color-bg;
+$color-btn-default: $skyblue;
+$color-btn-hot: $orange;
+
+
+%btn {
+  display: inline-block;
+  min-width: 100px;
+	padding: 10px 12px;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	border: none;
+	border-radius: 4px;
+	user-select: none;
+	color: $color-btn-text;
+}
+
+.btn-default {
+	@extend %btn;
+	background: $color-btn-default;
+}
+
+.btn-hot {
+	@extend %btn;
+	background: $color-btn-hot;
+}
